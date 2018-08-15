@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		4DF6102F211E343700714010 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF6102E211E343700714010 /* AppDelegate.swift */; };
-		4DF61031211E343700714010 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF61030211E343700714010 /* ViewController.swift */; };
 		4DF61034211E343700714010 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DF61032211E343700714010 /* Main.storyboard */; };
 		4DF61037211E343700714010 /* myJournalApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4DF61035211E343700714010 /* myJournalApp.xcdatamodeld */; };
 		4DF61039211E343800714010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF61038211E343800714010 /* Assets.xcassets */; };
 		4DF6103C211E343800714010 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DF6103A211E343800714010 /* LaunchScreen.storyboard */; };
 		4DF61047211E343800714010 /* myJournalAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF61046211E343800714010 /* myJournalAppTests.swift */; };
 		4DF61052211E343900714010 /* myJournalAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF61051211E343900714010 /* myJournalAppUITests.swift */; };
+		4DF61060211E34B200714010 /* JournalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF6105F211E34B200714010 /* JournalTableViewController.swift */; };
+		4DF61062211E37D800714010 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF61061211E37D800714010 /* AddItemViewController.swift */; };
+		616EF7052123BC5300CB4CF5 /* EditEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616EF7042123BC5300CB4CF5 /* EditEntryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,6 @@
 /* Begin PBXFileReference section */
 		4DF6102B211E343700714010 /* myJournalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myJournalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF6102E211E343700714010 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4DF61030211E343700714010 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4DF61033211E343700714010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4DF61036211E343700714010 /* myJournalApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = myJournalApp.xcdatamodel; sourceTree = "<group>"; };
 		4DF61038211E343800714010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		4DF6104D211E343900714010 /* myJournalAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myJournalAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF61051211E343900714010 /* myJournalAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myJournalAppUITests.swift; sourceTree = "<group>"; };
 		4DF61053211E343900714010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DF6105F211E34B200714010 /* JournalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalTableViewController.swift; sourceTree = "<group>"; };
+		4DF61061211E37D800714010 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		616EF7042123BC5300CB4CF5 /* EditEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEntryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,10 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				4DF6102E211E343700714010 /* AppDelegate.swift */,
-				4DF61030211E343700714010 /* ViewController.swift */,
-				4DF61032211E343700714010 /* Main.storyboard */,
+				4DF61063211E37E500714010 /* ViewControllers */,
+				4DF61064211E37FC00714010 /* Storyboards */,
 				4DF61038211E343800714010 /* Assets.xcassets */,
-				4DF6103A211E343800714010 /* LaunchScreen.storyboard */,
 				4DF6103D211E343800714010 /* Info.plist */,
 				4DF61035211E343700714010 /* myJournalApp.xcdatamodeld */,
 			);
@@ -126,6 +129,25 @@
 				4DF61053211E343900714010 /* Info.plist */,
 			);
 			path = myJournalAppUITests;
+			sourceTree = "<group>";
+		};
+		4DF61063211E37E500714010 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4DF61061211E37D800714010 /* AddItemViewController.swift */,
+				4DF6105F211E34B200714010 /* JournalTableViewController.swift */,
+				616EF7042123BC5300CB4CF5 /* EditEntryViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4DF61064211E37FC00714010 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4DF61032211E343700714010 /* Main.storyboard */,
+				4DF6103A211E343800714010 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +281,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DF61031211E343700714010 /* ViewController.swift in Sources */,
 				4DF6102F211E343700714010 /* AppDelegate.swift in Sources */,
+				4DF61062211E37D800714010 /* AddItemViewController.swift in Sources */,
+				4DF61060211E34B200714010 /* JournalTableViewController.swift in Sources */,
 				4DF61037211E343700714010 /* myJournalApp.xcdatamodeld in Sources */,
+				616EF7052123BC5300CB4CF5 /* EditEntryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
